@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <link rel="stylesheet" href="H1.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="Homepage" style="border: 1px ">
@@ -15,12 +15,12 @@
         <div class="page2" style="display:flex;gap:4px;">
            <nav style="display: grid;" > <h2 id="SI" style=" border:2px solid hwb(240 37% 3%);background-color:hwb(233 83% 0%);color:hwb(239 0% 50%);position:relative;top:-20px;border-top-left-radius:6px;border-top-right-radius:6px;">👤 1.Student Information</h2>
                 <div class="div2" style="display: flex;column-gap: 0px;border:1px solid black;background-color:white;border-bottom-left-radius:7px;border-bottom-right-radius:7px;height:150px ;position:relative;top:-41px;padding:5px;width:700px;">
-                <p><label for="">Student Name</label>
-                <input type="text" placeholder="Enter Your name" id="" style="width:200px;height:30px;"></p>
+                <p ><label for="">Student Name</label>
+                <input type="text" placeholder="Enter Your name"  style="width:200px;height:30px;" id="Sname"></p>
                 <p><label for="">Student ID</label>
-                <input type="ID" placeholder="Enter Your ID" id="" style="width:200px;height:30px;"></p><br>
+                <input type="text" placeholder="Enter Your ID" id="SId" style="width:200px;height:30px;"></p><br>
                <nav style="display:grid;"> <p><label for="">Attendance(%)</label><br>
-                <input type="number" placeholder="Enter Your Attendance percentage" id="" style="width:200px;height:30px;"><br>
+                <input type="number" placeholder="Enter Your Attendance percentage" id="Sattendence" style="width:200px;height:30px;"><br>
                 <p>Enter value between 0-100</p>
                </div></nav>
            <nav style="display:grid;" ><h2 id="" style="border:2px solid hwb(120 6% 41%);color:green;border-top-left-radius:6px;border-top-right-radius:6px;background-color:hwb(120 62% 2%);height:35px;position:relative;top:-20px;">📖 2.Add Subjects</h2>
@@ -29,8 +29,8 @@
                 <p><label for="" style="position:relative;top:-5px;">Subject Name</label>
                 <input type="text" placeholder="Enter the Subject name" id="Subname" style="display:grid;width:150px;height:30px;position:relative;top:-5px;"></p>
                 <p><label for="">Marks(0-100)</label>
-                <input type="number" placeholder="Enter the marks" id="Submarks" style="width:200px;height:30px;"></p>
-                <button  style="height: 40px;position:relative;top:40px;width:200px;color:white;background-color:green;" id="Add">+Add Subjects</button>
+                <input type="number" placeholder="Enter the marks" id="Marks" style="width:200px;height:30px;"></p>
+                <button  style="height: 40px;position:relative;top:40px;width:200px;color:white;background-color:green;" id="add">+Add Subjects</button>
             </div></nav>
         </div>
         <div class="page3" style="display:flex;column-gap:10px;">
@@ -38,33 +38,37 @@
            <nav> <h2 id="" style="border:2px solid hwb(300 2% 18%) ;color:purple;background-color:hwb(300 74% 1%);border-top-left-radius:6px;border-top-right-radius:6px;width:700px;  ">📋 3.Subjects List</h2>
             <div class="div4" style="border:1px solid black;width:680px;padding:10px;position:relative;top:-20px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;">
                 
-                <table style="border:1px solid black;width:670px;border-radius:6px;">
+                <table style="border:1px solid black;width:670px;border-radius:6px;" id="table1">
                     <tr>
                        <th>#</th>
                        <th>Subject</th>
                        <th>Marks</th>
                        <th>Action</th>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td style="display:flex;column-gap:20px;"><button id="" style="position:relative;left:100px;">✏️Edit</button><button id="" style="position: relative;left:90px;">🗑️Delete</button></td>
+                        <td ></td>
 
-                    </tr>
+                    </tr> -->
+                    
                 </table>
+                
+                <p id="totalsub">Total Subjects: </p>
+                    
                 <p id="" style="border:1px solid black;width:670px;border-radius:6px;">💡 Note:Add subjects with valid marks bitween 0-100</p>
             </div></nav>
           <div class="div6">
-            <button style="height:40px;width:250px;">🧮 Calculate Result</button>
-            <button style="height:40px;width:200px;">↻ Reset</button>
+            <button style="height:40px;width:250px;" id="calculate">🧮 Calculate Result</button>
+            <button style="height:40px;width:200px;" id="reset">↻ Reset</button>
          </div></nav>
           <nav style="display:grid;"><h2 id="RS" style="border:2px solid hwb(39 22% 1%);color:orange;width:620px;background-color:hwb(39 70% 1%);border-top-left-radius:6px;border-top-right-radius:6px;">📊 4.Result Summarry</h2>
             <div class="div5" style="border:1px solid black;position:relative;top:-21px;">
                 
                 <h3 id="" style="border:1px solid hwb(0 8% 0%);color:red;background-color:hwb(0 64% 1%);border-top-left-radius:6px;border-top-right-radius:6px;width:580px;position:relative;left:20px;">Accademic Performance</h3>
                 <nav id="" style="border:1px solid black;position:relative;top:-19px;width:580px;left:20px;border-bottom-left-radius:6px;border-bottom-left-radius:6px;">
-                    <table>
+                    <table id="table2" > 
                       <tr id="">
                         <td id="">Total Subjects</td>
                         <td id=""></td>
@@ -86,7 +90,7 @@
                 </nav>
                <h3 id="" style="border:1px solid hwb(183 4% 8% / 0.6392156862745098);color:hwb(195 2% 30%);background-color:hwb(194 85% 0%);border-top-left-radius:6px;border-top-right-radius:6px;width:580px;position:relative;left:20px;">Attendance Details</h3>
                 <nav id="" style="border:1px solid black;position:relative;left:20px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;width:580px;top:-20px;">
-                  <tabel>
+                  <tabel id="table3">
                     <tr id="">
                       <td id="">Attendence(%)</td>
                       <td id=""></td>
@@ -100,7 +104,7 @@
               
                 <h3 id="" style="border:1px solid hwb(349 24% 2%);color:hwb(349 1% 35%);background-color:hwb(350 57% 2%);border-top-left-radius:6px;border-top-right-radius:6px;width:580px;position:relative;left:20px;">Other Details </h3>
                  <nav id="" style="border:1px solid black;border-bottom-left-radius:6px;border-bottom-right-radius:6px;position:relative;top:-20px;left:20px;width:580px;">
-              <tabel>
+              <tabel id="table4">
                    <tr id="">
                      <td id="">Top Subject</td>
                      <td id=""></td>
