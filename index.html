@@ -6,11 +6,11 @@
     <title>Document</title>
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body  style="position: relative;left: 100px;">
     <div class="Homepage" style="border: 1px ">
         <div class="div1" style="display: flex;border:1px solid hwb(120 26% 24%);background-color:hwb(120 26% 24%);color:white ; border-radius:6px ;width:1340px;column-gap:400px; ">
             <h1 id="SMD">🎓Student Management Dashboard</h1>
-            <p id="DarkMode" style="border:1px;background-color:white;color:black;width:200px;height:50px;align-content:center;border-radius:6px;">🌙Dark Mode <button style="border-radius:10px;width:40px;height:20px;"></button></p>
+            <p id="DarkMode" style="border:1px;background-color:white;color:black;width:200px;height:50px;align-content:center;border-radius:6px;">🌙Dark Mode <b style="border: 2px solid black;width: 90px;height: 25px;border-radius: 10px;"><button style="border-radius:10px;width:20px;height:20px;"></button></b></p>
         </div><br>
         <div id="page2" style="display:flex;gap:4px;">
            <nav style="display: grid;" > <h2 id="SI" style=" border:2px solid hwb(240 37% 3%);background-color:hwb(233 83% 0%);color:hwb(239 0% 50%);position:relative;top:-20px;border-top-left-radius:6px;border-top-right-radius:6px;">👤 1.Student Information</h2>
@@ -24,14 +24,14 @@
                 <p id="message">Enter value between 0-100</p>
                </div></nav>
            <nav style="display:grid;" ><h2 id="" style="border:2px solid hwb(120 6% 41%);color:green;border-top-left-radius:6px;border-top-right-radius:6px;background-color:hwb(120 62% 2%);height:35px;position:relative;top:-20px;width: 630px;">📖 2.Add Subjects</h2>
-            <div class="div3" style="display:flex;border:1px solid black;background-color:white;position:relative;top:-41px;height:137px;padding:10px;column-gap:25px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;width:610px;">
+            <div class="div3" style="display:flex;border:1px solid black;background-color:white;position:relative;top:-41px;height:137px;padding:10px;column-gap:15px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;width:610px;">
                 
                 <p id="input3"><label for="" style="position:relative;top:-5px;">Subject Name</label>
                 <input type="text" placeholder="Enter the Subject name" id="Subname" style="display:grid;width:150px;height:30px;position:relative;top:-5px;"></p>
                 <p id="input4" style="position:relative;top:-5px;"><label for="">Marks(0-100)</label><br>
                 <input type="number" placeholder="Enter the marks" id="Marks" style="width:200px;height:30px;"></p>
-                <button  style="height: 40px;position:relative;top:28px;width:400px;color:white;background-color:green;" id="add">+Add Subjects</button><br>
-                <button id="update" style="height: 40px;position:relative;top:90px;left:-400px;width:400px;background-color: rgb(241, 70, 105);color:white;">UPDATE</button>
+                <p><button  style="height: 40px;position:relative;top:10px;width:200px;color:white;background-color:green;" id="add">+Add Subjects</button></p>
+                <p><button id="update" style="height: 40px;position:relative;top:80px;left:-500px;width:200px;background-color: rgb(241, 70, 105);color:white;">UPDATE</button></p>
             </div></nav>
         </div>
         <div class="page3" style="display:flex;column-gap:10px;">
@@ -61,8 +61,8 @@
                 <p id="" style="border:1px solid black;width:670px;border-radius:6px;">💡 Note:Add subjects with valid marks bitween 0-100</p>
             </div></nav>
           <div class="div6">
-            <button style="height:40px;width:250px;" id="calculate"> 🧮Calculate Result</button>
-            <button style="height:40px;width:200px;" id="reset">↻ Reset</button>
+            <button style="height:40px;width:250px;background-color:rgb(183, 241, 234) ;color:darkgreen;font-size: 20px;" id="calculate"> 🧮Calculate Result</button>
+            <button style="height:40px;width:200px;background-color: rgb(190, 243, 104);color: blue;font-size: 20px;" id="reset">↻ Reset</button>
          </div></nav>
           <nav style="display:grid;"><h2 id="RS" style="border:2px solid hwb(39 22% 1%);color:orange;width:620px;background-color:hwb(39 70% 1%);border-top-left-radius:6px;border-top-right-radius:6px;">📊 4.Result Summarry</h2>
             <div class="div5" style="border:1px solid black;position:relative;top:-21px;">
@@ -125,8 +125,8 @@
             </div>
           </div></nav>
           
-    <div class="div7" style="border:2px solid hwb(0 50% 50%);width:1000px;border-radius:6px;background-color:hwb(0 86% 11%);">
-     <p id="">ℹ️ Make sure to click "Calculate result" after adding subjects to see updated result</p>
+    <div class="div7" style="border:2px solid hwb(0 50% 50%);width:1350px;border-radius:6px;background-color:hwb(0 86% 11%);">
+     <p id="" align="center" >ℹ️ Make sure to click "Calculate result" after adding subjects to see updated result</p>
     </div>
   </div>
   <script src="index1.js"></script>
