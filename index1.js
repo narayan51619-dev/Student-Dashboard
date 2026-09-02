@@ -256,3 +256,29 @@ calculate.onclick=function(){
     
     
 }
+
+let darkmode=document.getElementById("Darkmode");
+let bodycolor=document.getElementById("bodycolor");
+let circle=document.getElementById("Circle");
+let dark=false;
+
+darkmode.onclick=function(){
+   if(dark===false){
+    darkmode.style.backgroundColor="blue";
+    bodycolor.style.backgroundColor="black";
+    circle.style.color="white";
+    circle.style.position="relative";
+    circle.style.left="10px";
+    dark=true;}
+    
+   else {
+     
+        darkmode.style.backgroundColor="gray";
+        bodycolor.style.backgroundColor="white";
+        circle.style.color="white";
+        circle.style.position="relative";
+        circle.style.left="-9px";
+        dark=false;
+  }
+}
+
