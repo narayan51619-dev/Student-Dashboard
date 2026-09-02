@@ -6,11 +6,11 @@
     <title>Document</title>
   <link rel="stylesheet" href="index.css">
 </head>
-<body  style="position: relative;left: 100px;">
+<body  style="position: relative;left: 100px;" id="bodycolor">
     <div class="Homepage" style="border: 1px ">
         <div class="div1" style="display: flex;border:1px solid hwb(120 26% 24%);background-color:hwb(120 26% 24%);color:white ; border-radius:6px ;width:1340px;column-gap:400px; ">
             <h1 id="SMD">🎓Student Management Dashboard</h1>
-            <p id="DarkMode" style="border:1px;background-color:white;color:black;width:200px;height:50px;align-content:center;border-radius:6px;">🌙Dark Mode <b style="border: 2px solid black;width: 90px;height: 25px;border-radius: 10px;"><button style="border-radius:10px;width:20px;height:20px;"></button></b></p>
+            <p id="DarkMode" style="border:1px;background-color:white;color:black;width:200px;height:50px;align-content:center;border-radius:6px;text-align: center center;font-size: 23px;" >🌙Dark Mode <button id="Darkmode"   style="border: 2px solid black;border-radius: 10px;width: 40px;height: 20px;position: relative;bottom: -1px;cursor: pointer;"><b id="Circle" style="position: relative;left: -9px;font-size: 17px;top:-5px;">⚪</b></button></p>
         </div><br>
         <div id="page2" style="display:flex;gap:4px;">
            <nav style="display: grid;" > <h2 id="SI" style=" border:2px solid hwb(240 37% 3%);background-color:hwb(233 83% 0%);color:hwb(239 0% 50%);position:relative;top:-20px;border-top-left-radius:6px;border-top-right-radius:6px;">👤 1.Student Information</h2>
@@ -37,9 +37,9 @@
         <div class="page3" style="display:flex;column-gap:10px;">
          <nav style="display:grid;">
            <nav> <h2 id="" style="border:2px solid hwb(300 2% 18%) ;color:purple;background-color:hwb(300 74% 1%);border-top-left-radius:6px;border-top-right-radius:6px;width:700px;  ">📋 3.Subjects List</h2>
-            <div class="div4" style="border:1px solid black;width:680px;padding:10px;position:relative;top:-20px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;">
+            <div class="div4" style="border:1px solid black;width:680px;padding:10px;position:relative;top:-20px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;background-color: white;">
                 
-                <table style="border:1px solid black;width:670px;border-radius:6px;" id="table1">
+                <table style="border:1px solid black;width:670px;border-radius:6px;background-color: white;" id="table1">
                     <tr>
                        <th>#</th>
                        <th>Subject</th>
@@ -65,10 +65,10 @@
             <button style="height:40px;width:200px;background-color: rgb(190, 243, 104);color: blue;font-size: 20px;" id="reset">↻ Reset</button>
          </div></nav>
           <nav style="display:grid;"><h2 id="RS" style="border:2px solid hwb(39 22% 1%);color:orange;width:620px;background-color:hwb(39 70% 1%);border-top-left-radius:6px;border-top-right-radius:6px;">📊 4.Result Summarry</h2>
-            <div class="div5" style="border:1px solid black;position:relative;top:-21px;">
+            <div class="div5" style="border:1px solid black;position:relative;top:-21px;background-color: white;border-bottom-right-radius: 6px;border-bottom-left-radius: 6px;">
                 
                 <h3 id="" style="border:1px solid hwb(0 8% 0%);color:red;background-color:hwb(0 64% 1%);border-top-left-radius:6px;border-top-right-radius:6px;width:580px;position:relative;left:20px;">Accademic Performance</h3>
-                <nav id="" style="border:1px solid black;position:relative;top:-19px;width:580px;left:20px;border-bottom-left-radius:6px;border-bottom-left-radius:6px;">
+                <nav id="" style="border:1px solid black;position:relative;top:-19px;width:580px;left:20px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;">
                     <table id="table2" > 
                       <tr id="">
                         <td id="">Total Subjects</td>
@@ -91,8 +91,8 @@
                 </nav>
                <h3 id="" style="border:1px solid hwb(183 4% 8% / 0.6392156862745098);color:hwb(195 2% 30%);background-color:hwb(194 85% 0%);border-top-left-radius:6px;border-top-right-radius:6px;width:580px;position:relative;left:20px;">Attendance Details</h3>
                 <nav id="" style="border:1px solid black;position:relative;left:20px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;width:580px;top:-20px;">
-                  <table id="table3">
-                    <tr id="">
+                  <table id="table3" >
+                    <tr id="" style="gap: 40px;">
                       <td id="">Attendence(%)</td>
                       <td id="att"></td>
                     </tr><br>
