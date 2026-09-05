@@ -1,0 +1,62 @@
+#openingpage{
+    position: fixed;
+    
+    inset: 0;
+    z-index: 10;
+    animation: timeout 1s 6s forwards;
+    clip-path: url(Untitled\ design\ \(1\).png);
+
+}
+#studentdashboard{
+    display: block;
+}
+@keyframes timeout{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+        visibility: hidden;
+    }
+}
+ #openingpage {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+#studentdashboard{
+    display: block;
+}
+/* Left half
+.leftDoor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    animation: openLeft 1.5s ease 3s forwards;
+}
+
+/* Right half 
+.rightDoor {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    animation: openRight 1.5s ease 3s forwards;
+}
+
+@keyframes openLeft {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes openRight {
+    to {
+        transform: translateX(100%);
+    }
+} 
