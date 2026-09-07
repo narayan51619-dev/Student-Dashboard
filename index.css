@@ -1,22 +1,25 @@
 @media only screen and (max-width:720px){
     body{
-        
-    left:-4px !important;
+        left: -4 !important;
     }
     .div1{
         width: 360px !important;
         height: 300px !important;
         display: grid !important;
-        
+        animation:visibl 6s !important;
         
         position: relative !important;
         
         font-size:10px !important;
     }
+    @keyframes visibl{
+        0%{opacity:0 ;}
+        100%{opacity:1;}
+    }
     #head{
         font-size:30px !important;
-        
-    
+        position: relative !important;
+        top: -26px !important;
     }
     #DarkMode1{
         font-size:13px !important;
@@ -24,6 +27,7 @@
         left:100px !important;
         width:150px !important;
         height: 50px !important;
+        top:-30px !important;
     
         text-align-last: center !important;
     }
@@ -35,11 +39,50 @@
         display:grid !important;
         
     }
+    #animation1{
+        position: relative !important;
+        
+        animation:visibl1 5s !important;
+    }
+    @keyframes visibl1{
+        0%{left:-360px;}
+        50%{left:-130px;}
+        100%{left:0;}
+    }
+    #animation2{
+        position: relative !important;
+        
+        animation:visibl2 5s !important;
+    }
+    @keyframes visibl2{
+        0%{right:-360px;}
+        50%{right:-130px;}
+        100%{right:0;}
+    }
+    #animation3{
+        position: relative !important;
+        
+        animation:visibl3 5s !important;
+    }
+    @keyframes visibl3{
+        0%{right:-360px;}
+        50%{right:-130px;}
+        100%{right:0;}
+    }
+    #animation4{
+        position: relative !important;
+        
+        animation:visibl4 5s !important;
+    }
+    @keyframes visibl4{
+        0%{left:-360px;}
+        50%{left:-130px;}
+        100%{left:0;}
+    }
     .div2{
         display:grid !important;
         height:500px !important;
         width:360px !important;
-        grid-row-gap:-50px;
     }
     #SI{
         width:360px !important;
@@ -157,9 +200,22 @@
        position:relative !important;
        left:20px !important;
    }
+   .div6{
+       animation:visibl5 6s !important;
+       animation-delay: 2s !important;
+   }
+   @keyframes visibl5{
+       0%{opacity:0;}
+       100%{opacity:1;}
+   }
    .div7{
        width: 360px !important;
        height: 100px !important;
+       animation:visibl6 6s !important;
+   }
+   @keyframes visibl6{
+       0%{opacity:0;}
+       100%{opacity:1;}
    }
    #tm{ 
        left:50px !important;
@@ -189,32 +245,92 @@
    #failsub{
        left:50px !important;
    }
-}
-#openingpage{
-    position: fixed;
-    inset: 0;
    
-    z-index: 10;
-    object-fit: cover;
-    animation:timeout 1s 3s forwards;
+
 }
-#image,
-#image2 {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.div7{
+       
+       animation:visibl6 6s ;
 }
-#image {
-    clip-path: inset(0 50% 0 0);
+@keyframes visibl6{
+       0%{opacity:0;}
+       100%{opacity:1;}
+}
+#animation1{
+        position: relative ;
+        
+        animation:visibl1 5s ;
+}
+@keyframes visibl1{
+        0%{left:-700px;}
+        50%{left:-350px;}
+        100%{left:0;}
+}
+#animation2{
+        position: relative ;
+        
+        animation:visibl2 5s ;
+}
+ @keyframes visibl2{
+        0%{right:-700px;}
+        50%{right:-350px;}
+        100%{right:0;}
+}
+#animation3{
+        position: relative ;
+        
+        animation:visibl3 5s ;
+}
+@keyframes visibl3{
+        0%{right:-700px;}
+        50%{right:-350px;}
+        100%{right:0;}
+}
+#animation4{
+        position: relative ;
+        
+        animation:visibl4 5s ;
+}
+ @keyframes visibl4{
+        0%{left:-700px;}
+        50%{left:-350px;}
+        100%{left:0;}
+}
+.div7{
+       
+       animation:visibl6 6s;
+}
+@keyframes visibl6{
+       0%{opacity:0;}
+       100%{opacity:1;}
+}
+.div6{
+       
+       animation:visibl6 6s;
+}
+@keyframes visibl5{
+       0%{opacity:0;}
+       100%{opacity:1;}
+    
+}
+#calculate{
+    border-radius: 6px;
+}
+#calculate:hover{
+    width: 240px;
+    height: 50px;
+}
+#reset{
+    border-radius: 6px;
+}
+#reset:hover{
+    width: 240px;
+    height: 50px;
 }
 
-#image2 {
-    clip-path: inset(0 0 0 50%);
-}
 
-.Homepage{
-    display: block;
-}
+
+
+
+
+
