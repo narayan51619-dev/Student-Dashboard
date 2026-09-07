@@ -1,62 +1,220 @@
+@media only screen and (max-width:720px){
+    body{
+        
+    left:-4px !important;
+    }
+    .div1{
+        width: 360px !important;
+        height: 300px !important;
+        display: grid !important;
+        
+        
+        position: relative !important;
+        
+        font-size:10px !important;
+    }
+    #head{
+        font-size:30px !important;
+        
+    
+    }
+    #DarkMode1{
+        font-size:13px !important;
+        position: relative !important;
+        left:100px !important;
+        width:150px !important;
+        height: 50px !important;
+    
+        text-align-last: center !important;
+    }
+    #DarkMode{
+        font-size:15px !important;
+        
+    }
+    #page2{
+        display:grid !important;
+        
+    }
+    .div2{
+        display:grid !important;
+        height:500px !important;
+        width:360px !important;
+        grid-row-gap:-50px;
+    }
+    #SI{
+        width:360px !important;
+    }
+    #input{
+        display: grid !important;
+        
+    }
+    #Sname{
+        width:300px !important;
+    }
+     #input1{
+        display: grid !important;
+        
+    } 
+    #SId{
+        width:300px !important;
+    }
+    #input2{
+        display: grid !important;
+        
+    }
+    #Sattendence{
+        width:300px !important;
+    }
+    #hat{
+        position: relative !important;
+        left:-6px !important;
+        top:-20px !important;
+        font-size: 70px !important;
+    }
+    #SMD{
+        position: relative !important;
+        text-align: center !important;
+    }
+    #SSM{
+        width:360px !important;
+    }
+    .div3{
+        width:360px !important;
+        display: grid !important;
+        height: 400px !important;
+    }
+    #update{
+        top:10px !important;
+        width:200px !important;
+        left:5px !important;
+    }
+    #Subname{
+        width:300px !important;
+    }
+    #Marks{
+        width:300px !important;
+    }
+    .page3{
+        display:grid !important;
+    }
+    .div4{
+        width:360px !important;
+    }
+    #table1{
+        width:360px !important;
+        column-gap:1px !important ;
+        
+    }
+    #precuasion{
+        width:340px !important;
+        height: 40px !important;
+    }
+    #calculate{
+        width:200px !important;
+        font-size: 16px !important;
+    }
+    #reset{
+        width:150px !important;
+        font-size: 16px !important;
+    }
+    #RS{
+        width:360px !important;
+    }
+   .div5{
+       width:360px !important;
+       
+   }
+   #head1{
+       width:300px !important;
+       left:20px !important;
+   }
+   #headding{
+       width: 300px !important;
+       position:relative !important;
+       left:20px !important;
+   }
+   #head4{
+       width:360px !important;
+       
+   }
+   #headding1{
+       width: 300px !important;
+       position:relative !important;
+       left:20px !important;
+   }
+   #head2{
+       width:300px !important;
+       position:relative !important;
+       left:20px !important;
+   }
+   #headding2{
+       width: 300px !important;
+       position:relative !important;
+       left:20px !important;
+   }
+   #head3{
+       width:300px !important;
+       position:relative !important;
+       left:20px !important;
+   }
+   .div7{
+       width: 360px !important;
+       height: 100px !important;
+   }
+   #tm{ 
+       left:50px !important;
+       
+   }
+   #avg{
+       left:50px !important;
+   }
+   #grad{
+       left:50px !important;
+   }
+   #ts{
+        left:50px !important;
+   }
+   #att{
+       left:50px !important;
+   }
+   #status{
+       left:50px !important;
+   }
+   #topsub{
+       left:50px !important;
+   }
+   #passsub{
+       left:50px !important;
+   }
+   #failsub{
+       left:50px !important;
+   }
+}
 #openingpage{
     position: fixed;
-    
     inset: 0;
+   
     z-index: 10;
-    animation: timeout 1s 6s forwards;
-    clip-path: url(Untitled\ design\ \(1\).png);
-
+    object-fit: cover;
+    animation:timeout 1s 3s forwards;
 }
-#studentdashboard{
+#image,
+#image2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
-@keyframes timeout{
-    from{
-        opacity:1;
-    }
-    to{
-        opacity:0;
-        visibility: hidden;
-    }
+#image {
+    clip-path: inset(0 50% 0 0);
 }
- #openingpage {
-    position: fixed;
-    inset: 0;
-    z-index: 10;
+
+#image2 {
+    clip-path: inset(0 0 0 50%);
 }
-#studentdashboard{
+
+.Homepage{
     display: block;
 }
-/* Left half
-.leftDoor {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-
-    animation: openLeft 1.5s ease 3s forwards;
-}
-
-/* Right half 
-.rightDoor {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-
-    animation: openRight 1.5s ease 3s forwards;
-}
-
-@keyframes openLeft {
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes openRight {
-    to {
-        transform: translateX(100%);
-    }
-} 
