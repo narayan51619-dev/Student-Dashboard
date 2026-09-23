@@ -1,13 +1,51 @@
 @media only screen and (max-width:720px){
+    .Homepage{
+        
+        position:relative !important;
+        z-index:1 !important;
+        margin-top:-100px !important;
+        top: -500px !important;
+    }
+    .respones1{
+        display: none !important;
+        
+    }
+   
+    .respones2{
+        display: block !important;
+        position: relative !important;
+        z-index: 2 !important;
+         pointer-events:none !important;
+    }
+    #image3{
+    animation: rest3 6s !important;
+    animation-fill-mode: forwards !important;
+   }
+   #image4{
+    animation: rest4 6s !important;
+    animation-fill-mode: forwards !important;
+  }
+  @keyframes rest3{
+    0%{top: 10px ;}
+    50%{top: -150px ;}
+    100%{top: -320px ; opacity: 0; pointer-events:none;}
+  }
+  @keyframes rest4{
+    0%{top: 10px ;}
+    50%{top: 300px ;}
+    100%{top: 1000px ; opacity: 0; pointer-events:none;}
+  }
+
     body{
-        left: 0 !important;
+        left: -4 !important;
     }
     .div1{
-        width: 380px !important;
+        width: 360px !important;
         height: 300px !important;
         display: grid !important;
         animation:visibl 6s !important;
-        
+        animation-delay: 7s !important
+        ;
         position: relative !important;
         
         font-size:10px !important;
@@ -19,7 +57,8 @@
     #head{
         font-size:30px !important;
         position: relative !important;
-        top: -26px !important;
+        top: -18px !important;
+        left: -15px !important;
     }
     #DarkMode1{
         font-size:13px !important;
@@ -37,15 +76,18 @@
     }
     #page2{
         display:grid !important;
+        width: 360px !important;
         
     }
     #animation1{
         position: relative !important;
         
         animation:visibl1 5s !important;
+        animation-delay: 7s !important;
+
     }
     @keyframes visibl1{
-        0%{left:-380px;}
+        0%{left:-360px;}
         50%{left:-130px;}
         100%{left:0;}
     }
@@ -53,9 +95,11 @@
         position: relative !important;
         
         animation:visibl2 5s !important;
+        animation-delay: 7s !important;
+
     }
     @keyframes visibl2{
-        0%{right:-380px;}
+        0%{right:-360px;}
         50%{right:-130px;}
         100%{right:0;}
     }
@@ -63,9 +107,11 @@
         position: relative !important;
         
         animation:visibl3 5s !important;
+        animation-delay: 7s !important;
+
     }
     @keyframes visibl3{
-        0%{right:-380px;}
+        0%{right:-360px;}
         50%{right:-130px;}
         100%{right:0;}
     }
@@ -73,19 +119,21 @@
         position: relative !important;
         
         animation:visibl4 5s !important;
+        animation-delay: 7s !important;
+
     }
     @keyframes visibl4{
-        0%{left:-380px;}
+        0%{left:-360px;}
         50%{left:-130px;}
         100%{left:0;}
     }
     .div2{
         display:grid !important;
         height:500px !important;
-        width:380px !important;
+        width:360px !important;
     }
     #SI{
-        width:380px !important;
+        width:360px !important;
     }
     #input{
         display: grid !important;
@@ -111,7 +159,7 @@
     #hat{
         position: relative !important;
         left:-6px !important;
-        top:-20px !important;
+        top:-5px !important;
         font-size: 70px !important;
     }
     #SMD{
@@ -119,10 +167,10 @@
         text-align: center !important;
     }
     #SSM{
-        width:380px !important;
+        width:360px !important;
     }
     .div3{
-        width:380px !important;
+        width:360px !important;
         display: grid !important;
         height: 400px !important;
     }
@@ -141,15 +189,15 @@
         display:grid !important;
     }
     .div4{
-        width:380px !important;
+        width:360px !important;
     }
     #table1{
-        width:380px !important;
+        width:360px !important;
         column-gap:1px !important ;
         
     }
     #precuasion{
-        width:380px !important;
+        width:340px !important;
         height: 40px !important;
     }
     #calculate{
@@ -161,10 +209,10 @@
         font-size: 16px !important;
     }
     #RS{
-        width:380px !important;
+        width:360px !important;
     }
    .div5{
-       width:380px !important;
+       width:360px !important;
        
    }
    #head1{
@@ -177,7 +225,7 @@
        left:20px !important;
    }
    #head4{
-       width:380px !important;
+       width:360px !important;
        
    }
    #headding1{
@@ -202,16 +250,18 @@
    }
    .div6{
        animation:visibl5 6s !important;
-       animation-delay: 2s !important;
+        
    }
    @keyframes visibl5{
        0%{opacity:0;}
        100%{opacity:1;}
    }
    .div7{
-       width: 380px !important;
+       width: 360px !important;
        height: 100px !important;
        animation:visibl6 6s !important;
+       
+
    }
    @keyframes visibl6{
        0%{opacity:0;}
@@ -248,9 +298,57 @@
    
 
 }
+.Homepage{
+    
+    position:relative;
+    z-index:1;
+    margin-top:-1100px;
+    
+}
+
+.respones1{
+    display: block;
+    position: relative;
+     pointer-events:none;
+    z-index: 2;
+}
+.respones2{
+    display: none;
+}
+#image1{
+    animation: rest1 6s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+#image2{
+    animation: rest2 6s;
+     animation-fill-mode: forwards;
+     animation-delay: 1s;
+}
+@keyframes rest1{
+    0%{left:-100px;}
+    50%{left:-500px;}
+    100%{left:-1000px ;opacity:0; pointer-events:none;}
+}
+@keyframes rest2{
+    0%{left:-111px;}
+    50%{left:500px;}
+    100%{left:1000px; opacity:0; pointer-events:none;}
+}
+
+ .div1{
+        
+        animation:visibl 6s ;
+       
+}
+ @keyframes visibl{
+        0%{opacity:0 ;}
+        100%{opacity:1;}
+}
 .div7{
        
        animation:visibl6 6s ;
+      
 }
 @keyframes visibl6{
        0%{opacity:0;}
@@ -260,6 +358,7 @@
         position: relative ;
         
         animation:visibl1 5s ;
+        
 }
 @keyframes visibl1{
         0%{left:-700px;}
@@ -270,6 +369,7 @@
         position: relative ;
         
         animation:visibl2 5s ;
+        
 }
  @keyframes visibl2{
         0%{right:-700px;}
@@ -280,6 +380,7 @@
         position: relative ;
         
         animation:visibl3 5s ;
+         
 }
 @keyframes visibl3{
         0%{right:-700px;}
@@ -290,6 +391,7 @@
         position: relative ;
         
         animation:visibl4 5s ;
+        
 }
  @keyframes visibl4{
         0%{left:-700px;}
@@ -299,6 +401,7 @@
 .div7{
        
        animation:visibl6 6s;
+        
 }
 @keyframes visibl6{
        0%{opacity:0;}
@@ -307,6 +410,7 @@
 .div6{
        
        animation:visibl6 6s;
+       
 }
 @keyframes visibl5{
        0%{opacity:0;}
@@ -327,10 +431,21 @@
     width: 240px;
     height: 50px;
 }
-
-
-
-
-
-
-
+#hat{
+    font-size: 100px;
+    position: relative;
+    top: -5px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+}
+#head{
+    font-size:60px ;
+    position: relative;
+    top: -10px;
+    left: 70px;
+}
+#DarkMode1{
+    position: relative;
+    top: 100px;
+}
