@@ -21,16 +21,16 @@
     #image3{
     position:relative !important;
      left:0px !important;   
-    animation: rest3 6s !important;
+    animation: rest3 7s !important;
     animation-fill-mode: forwards !important;
-     animation-delay:3s !important  ;
+     animation-delay:4s !important  ;
    }
    #image4{
     position:relative !important;
     left:0px !important;   
-    animation: rest4 6s !important;
+    animation: rest4 7s !important;
     animation-fill-mode: forwards !important;
-    animation-delay:3s !important  ;
+    animation-delay:4s !important  ;
   }
   @keyframes rest3{
     0%{top: 10px ;}
@@ -51,7 +51,7 @@
         height: 300px !important;
         display: grid !important;
         animation:visibl 6s !important;
-        animation-delay: 7s !important
+        animation-delay: 6s !important
         ;
         position: relative !important;
         
@@ -90,7 +90,7 @@
         position: relative !important;
         
         animation:visibl1 5s !important;
-        animation-delay: 7s !important;
+        animation-delay: 6s !important;
 
     }
     @keyframes visibl1{
@@ -102,7 +102,7 @@
         position: relative !important;
         
         animation:visibl2 5s !important;
-        animation-delay: 7s !important;
+        animation-delay: 6s !important;
 
     }
     @keyframes visibl2{
@@ -114,7 +114,7 @@
         position: relative !important;
         
         animation:visibl3 5s !important;
-        animation-delay: 7s !important;
+        animation-delay: 6s !important;
 
     }
     @keyframes visibl3{
@@ -126,7 +126,7 @@
         position: relative !important;
         
         animation:visibl4 5s !important;
-        animation-delay: 7s !important;
+        animation-delay: 6s !important;
 
     }
     @keyframes visibl4{
