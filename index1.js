@@ -157,26 +157,26 @@ add.onclick=function(){
            allmarks.push(Number(Marks.value));
            Subname.value="";
            Marks.value="";
-           let index=allmarks.length-1;
-           Edit.onclick=function(){
-               
-               Subname.value=class1.innerHTML;
-               Marks.value=class2.innerHTML;
-               update.onclick=function(){
-                   class1.innerHTML=Subname.value;
-                   class2.innerHTML=Marks.value;
-                     
-                     allmarks[index]=Number(Marks.value);
-                     calculate.click();
-                    Subname.value="";
-                    Marks.value="";
-                   
-                   
-               }
-             
-               
-              
-               }
+           Edit.onclick=function(){ 
+
+    Subname.value=class1.innerHTML;
+    Marks.value=class2.innerHTML;
+
+    update.onclick=function(){
+
+        class1.innerHTML=Subname.value;
+        class2.innerHTML=Marks.value;
+
+        let index=row.rowIndex-1;
+
+        allmarks[index]=Number(Marks.value);
+
+        calculate.click();
+
+        Subname.value="";
+        Marks.value="";
+    }
+}
                
            
             Delete.onclick=function(){
@@ -230,7 +230,7 @@ calculate.onclick=function(){
              
          
     
-    if(allmarks[i]>40){
+    if(allmarks[i]>=40){
         countvalue1++;
     }
     else{
@@ -332,8 +332,8 @@ reset.onclick=function(){
     
        counter=0;
       allmarks=[];
-       highest=0;
-       topsubject="";
-       countvalue1=0;
-       countvalue2=0;
+       // highest=0;
+       // topsubject="";
+       // countvalue1=0;
+       // countvalue2=0;
 }
