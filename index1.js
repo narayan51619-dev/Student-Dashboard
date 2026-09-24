@@ -247,7 +247,7 @@ calculate.onclick=function(){
     }
     totalmarks.innerHTML=sum;
         
-    let average=(sum/allmarks.length);
+    let average=(Math.floor(sum/allmarks.length));
     averagemarks.innerHTML=average;
     if(average>=90 && average<=100){
         grade.innerHTML="A+";
