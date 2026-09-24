@@ -20,40 +20,64 @@ let calculate=document.getElementById("calculate");
 let message=document.getElementById("message");
 let counter=0;
 var allmarks=[];
-let highest=0;
-var topsubject="";
-let countvalue1="";
-let countvalue2="";
+
 let reset=document.getElementById("reset");
 var para=document.createElement("p");
 input.appendChild(para);
 Sname.oninput=function(){
-          Sname.style.borderColor="black";
-          para.style.visibility="hidden";
+    
+    if (!/^[A-Za-z]+$/.test(Sname.value)){
+          window.alert("Please enter only alphabet!");
+    }
+    else{
+        
+        Sname.style.borderColor="black";
+        para.style.visibility="hidden";
+    }
 }
 var para1=document.createElement("p");
 input1.appendChild(para1);
 SId.oninput=function(){
-    SId.style.borderColor="black";
-    para1.style.visibility="hidden";
+    if(!/^[A-Za-z0-9]+$/.test(SId.value)){
+        window.alert("Please enter only alphabet and numbers!");
+    }
+    else{
+       SId.style.borderColor="black";
+       para1.style.visibility="hidden";
+    }
 }
 
 
 Satt.oninput=function(){
+    if(Satt.value<0 || Satt.value>100){
+        window.alert("Please enter value between 0-100");
+    }
+    else{
     Satt.style.borderColor="black";
-    
+    }
 }
 var para3=document.createElement("p");
 input3.appendChild(para3);
 Subname.oninput=function(){
-    Subname.style.borderColor="black";
-    para3.style.visibility="hidden";
+    if(!/^[A-Za-z]+$/.test(Subname.value))
+    {
+        window.alert("Please enter only alphabet");
+    }
+    else{
+      Subname.style.borderColor="black";
+      para3.style.visibility="hidden";
+    }
 }
 var para4=document.createElement("p");
 input4.appendChild(para4);
 Marks.oninput=function(){
-    Marks.style.borderColor="black";
-    para4.style.visibility="hidden";
+    if(Marks.value<0 || Marks.value>100){
+        window.alert("Please enter value between 0-100")
+    }
+    else{
+        Marks.style.borderColor="black";
+        para4.style.visibility="hidden";
+    }
 }
 add.onclick=function(){
     
@@ -97,9 +121,11 @@ add.onclick=function(){
         para4.style.color="red";
         para4.style.visibility="visible";
     }
-    else{
+    
    
-      if(counter<10){
+    
+        
+        if(counter<10){
            
            let row=document.createElement("tr");
            let class0=document.createElement ("td");
@@ -123,23 +149,6 @@ add.onclick=function(){
            class2.innerHTML=Marks.value;
            
           
-           if(Number(Marks.value)>highest){
-               highest=Number(Marks.value)
-               ;
-               topsubject=Subname.value+Marks.value;
-               
-           
-              
-          }
-           if(Number(Marks.value)<40){
-                   
-                   countvalue1++;
-                   
-               }
-               else{
-                   countvalue2++;
-                   
-               }
 
     
            Edit.innerHTML=" ✏️Edit";
@@ -148,7 +157,7 @@ add.onclick=function(){
            allmarks.push(Number(Marks.value));
            Subname.value="";
            Marks.value="";
-           let index=allmarks.length;
+           let index=allmarks.length-1;
            Edit.onclick=function(){
                
                Subname.value=class1.innerHTML;
@@ -172,11 +181,11 @@ add.onclick=function(){
            
             Delete.onclick=function(){
                 let nextrow=row.nextElementSibling;
-                let index=Number(row.dataset.index);
+                let index=row.rowIndex-1;
                 allmarks.splice(index,1);
                    row.remove();
                    counter--;
-                   calculate.click();
+                   
                    totalsub.innerHTML=counter;
                    
                    
@@ -185,13 +194,14 @@ add.onclick=function(){
                        nextrow=nextrow.nextElementSibling;
                      
                    }
+                   calculate.click();
                        }
                        
                
                
             
         }
-    }       
+            
     
 }
 let totalsubject=document.getElementById("ts");
@@ -204,6 +214,10 @@ let topsub=document.getElementById("topsub");
 let passsub=document.getElementById("passsub");
 let failsub=document.getElementById("failsub");
 calculate.onclick=function(){
+    let highest=0;
+    var topsubject="";
+    let countvalue1=0;
+    let countvalue2=0;
     
     totalsubject.innerHTML=counter;
     var sum=0;
@@ -211,7 +225,25 @@ calculate.onclick=function(){
     for(let i=0;i<allmarks.length;i++){
         
          sum=sum+allmarks[i];
-        
+         
+         
+             
+         
+    
+    if(allmarks[i]>40){
+        countvalue1++;
+    }
+    else{
+        countvalue2++;
+    }
+    if(allmarks[i]>highest){
+             highest=allmarks[i];
+             
+             let currentrow=table1.rows[i+1];
+             if(currentrow){
+                 topsubject=currentrow.children[1].innerHTML+allmarks[i];
+             }
+        }
     }
     totalmarks.innerHTML=sum;
         
@@ -251,12 +283,11 @@ calculate.onclick=function(){
     
     topsub.innerHTML=topsubject;
     
-    passsub.innerHTML=countvalue2;
-    failsub.innerHTML=countvalue1;
+    passsub.innerHTML=countvalue1;
+    failsub.innerHTML=countvalue2;
     
     
 }
-
 let darkmode=document.getElementById("Darkmode");
 let bodycolor=document.getElementById("bodycolor");
 let circle=document.getElementById("Circle");
@@ -281,4 +312,28 @@ darkmode.onclick=function(){
         dark=false;
   }
 }
-
+let form=document.getElementById("form");
+reset.onclick=function(){
+    form.reset();
+    while(table1.rows.length>1){
+        table1.deleteRow(1);
+    }
+    totalsubject.innerHTML="";
+    totalmarks.innerHTML="";
+    grade.innerHTML="";
+    averagemarks.innerHTML="";
+    attendence.innerHTML="";
+    status.innerHTML="";
+    topsub.innerHTML="";
+    passsub.innerHTML="";
+    failsub.innerHTML="";
+    
+    totalsub.innerHTML="";
+    
+       counter=0;
+      allmarks=[];
+       highest=0;
+       topsubject="";
+       countvalue1=0;
+       countvalue2=0;
+}
