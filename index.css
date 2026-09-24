@@ -346,6 +346,7 @@
  .div1{
         
         animation:visibl 6s ;
+        animation-delay: 6s ;
        
 }
  @keyframes visibl{
@@ -355,7 +356,7 @@
 .div7{
        
        animation:visibl6 6s ;
-      
+       animation-delay: 6s ;
 }
 @keyframes visibl6{
        0%{opacity:0;}
@@ -365,7 +366,7 @@
         position: relative ;
         
         animation:visibl1 5s ;
-        
+         animation-delay: 6s ;
 }
 @keyframes visibl1{
         0%{left:-700px;}
@@ -376,7 +377,7 @@
         position: relative ;
         
         animation:visibl2 5s ;
-        
+         animation-delay: 6s ;
 }
  @keyframes visibl2{
         0%{right:-700px;}
@@ -387,7 +388,7 @@
         position: relative ;
         
         animation:visibl3 5s ;
-         
+          animation-delay: 6s ;
 }
 @keyframes visibl3{
         0%{right:-700px;}
@@ -398,7 +399,7 @@
         position: relative ;
         
         animation:visibl4 5s ;
-        
+         animation-delay: 6s ;
 }
  @keyframes visibl4{
         0%{left:-700px;}
@@ -408,7 +409,7 @@
 .div7{
        
        animation:visibl6 6s;
-        
+         animation-delay: 6s ;
 }
 @keyframes visibl6{
        0%{opacity:0;}
@@ -417,7 +418,7 @@
 .div6{
        
        animation:visibl6 6s;
-       
+        animation-delay: 6s ;
 }
 @keyframes visibl5{
        0%{opacity:0;}
